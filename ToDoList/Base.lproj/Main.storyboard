@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -67,17 +68,53 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This will include more details about the task of the todo app" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8p3-Vy-fYv">
+                                <rect key="frame" x="151" y="297" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4ni-r1-zCP"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Has Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB2-Qc-YOc">
+                                <rect key="frame" x="95" y="501" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xHU-zk-9pQ">
+                                <rect key="frame" x="245" y="496" width="51" height="31"/>
+                                <color key="onTintColor" systemColor="systemOrangeColor"/>
+                            </switch>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="36F-ih-noU">
+                                <rect key="frame" x="2" y="615" width="430" height="88"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="55V-rg-1ON"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="rLp-Ll-Wf8" firstAttribute="top" secondItem="55V-rg-1ON" secondAttribute="top" constant="60" id="51l-yd-Nhg"/>
+                            <constraint firstItem="8p3-Vy-fYv" firstAttribute="trailing" secondItem="ouU-QQ-DN8" secondAttribute="trailing" id="9TO-HL-4km"/>
                             <constraint firstItem="Dkp-7s-pee" firstAttribute="leading" secondItem="rLp-Ll-Wf8" secondAttribute="leading" id="Eqz-uu-G8V"/>
+                            <constraint firstItem="xHU-zk-9pQ" firstAttribute="top" secondItem="8p3-Vy-fYv" secondAttribute="bottom" constant="71" id="FB7-30-oFI"/>
+                            <constraint firstItem="8p3-Vy-fYv" firstAttribute="top" secondItem="Dkp-7s-pee" secondAttribute="top" id="Khx-F0-ooC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="36F-ih-noU" secondAttribute="trailing" constant="-22" id="Tgn-Wd-3FL"/>
                             <constraint firstItem="ouU-QQ-DN8" firstAttribute="leading" secondItem="rLp-Ll-Wf8" secondAttribute="trailing" constant="50" id="aiw-LT-SgA"/>
+                            <constraint firstItem="xHU-zk-9pQ" firstAttribute="centerX" secondItem="ouU-QQ-DN8" secondAttribute="centerX" id="bvH-JB-egR"/>
                             <constraint firstItem="ouU-QQ-DN8" firstAttribute="bottom" secondItem="rLp-Ll-Wf8" secondAttribute="bottom" id="cYj-xL-ExH"/>
                             <constraint firstItem="Dkp-7s-pee" firstAttribute="top" secondItem="rLp-Ll-Wf8" secondAttribute="bottom" constant="56" id="ejn-cy-wcP"/>
                             <constraint firstItem="55V-rg-1ON" firstAttribute="trailing" secondItem="ouU-QQ-DN8" secondAttribute="trailing" constant="39" id="fbV-2j-wNQ"/>
+                            <constraint firstItem="8p3-Vy-fYv" firstAttribute="leading" secondItem="Dkp-7s-pee" secondAttribute="trailing" constant="53" id="fk0-BR-WcE"/>
+                            <constraint firstItem="xHU-zk-9pQ" firstAttribute="centerY" secondItem="VB2-Qc-YOc" secondAttribute="centerY" id="p9G-pG-c1v"/>
                             <constraint firstItem="rLp-Ll-Wf8" firstAttribute="leading" secondItem="55V-rg-1ON" secondAttribute="leading" constant="43" id="qWD-uR-3Ji"/>
+                            <constraint firstItem="VB2-Qc-YOc" firstAttribute="leading" secondItem="55V-rg-1ON" secondAttribute="leading" constant="95" id="rai-Jk-lwT"/>
+                            <constraint firstItem="55V-rg-1ON" firstAttribute="bottom" secondItem="36F-ih-noU" secondAttribute="bottom" constant="195" id="sqV-AD-xn2"/>
+                            <constraint firstItem="36F-ih-noU" firstAttribute="leading" secondItem="55V-rg-1ON" secondAttribute="leading" constant="2" id="vXl-qh-quz"/>
+                            <constraint firstItem="36F-ih-noU" firstAttribute="top" secondItem="xHU-zk-9pQ" secondAttribute="bottom" constant="88" id="yRh-Tq-Wxv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Todo Name Details" id="Rh4-Hr-zyS"/>
@@ -110,4 +147,15 @@
             <point key="canvasLocation" x="-73.95348837209302" y="31.545064377682404"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
