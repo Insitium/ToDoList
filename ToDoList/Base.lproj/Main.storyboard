@@ -56,16 +56,14 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkp-7s-pee">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkp-7s-pee">
                                 <rect key="frame" x="43" y="297" width="55" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ouU-QQ-DN8">
-                                <rect key="frame" x="149" y="215" width="243" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ouU-QQ-DN8">
+                                <rect key="frame" x="148" y="207" width="243" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -74,6 +72,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rLp-Ll-Wf8" firstAttribute="top" secondItem="55V-rg-1ON" secondAttribute="top" constant="60" id="51l-yd-Nhg"/>
+                            <constraint firstItem="Dkp-7s-pee" firstAttribute="leading" secondItem="rLp-Ll-Wf8" secondAttribute="leading" id="Eqz-uu-G8V"/>
+                            <constraint firstItem="ouU-QQ-DN8" firstAttribute="leading" secondItem="rLp-Ll-Wf8" secondAttribute="trailing" constant="50" id="aiw-LT-SgA"/>
+                            <constraint firstItem="ouU-QQ-DN8" firstAttribute="bottom" secondItem="rLp-Ll-Wf8" secondAttribute="bottom" id="cYj-xL-ExH"/>
+                            <constraint firstItem="Dkp-7s-pee" firstAttribute="top" secondItem="rLp-Ll-Wf8" secondAttribute="bottom" constant="56" id="ejn-cy-wcP"/>
+                            <constraint firstItem="55V-rg-1ON" firstAttribute="trailing" secondItem="ouU-QQ-DN8" secondAttribute="trailing" constant="39" id="fbV-2j-wNQ"/>
                             <constraint firstItem="rLp-Ll-Wf8" firstAttribute="leading" secondItem="55V-rg-1ON" secondAttribute="leading" constant="43" id="qWD-uR-3Ji"/>
                         </constraints>
                     </view>
