@@ -11,7 +11,7 @@ class DetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Todo Name Details"
+        title = "My Tasks Details"
         // Do any additional setup after loading the view.
     }
     

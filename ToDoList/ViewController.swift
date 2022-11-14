@@ -2,7 +2,8 @@
 //  ViewController.swift
 //  ToDoList
 //
-//  Created by Sarthak Vashistha on 2022-11-12.
+//  Created by Sarthak Vashistha, Manmeen kaur, Neha Patel on 2022-11-12.
+//
 //
 
 import UIKit
@@ -13,7 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Todo App"
+        title = "My Tasks"
         // Do any additional setup after loading the view.
     }
 
