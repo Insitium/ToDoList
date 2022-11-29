@@ -9,13 +9,13 @@
  Sarthak Vashistha - 301245284
  
  Date Created: 11/12/2022
- To-Do List App - Created App UI (To Do List Table View screen + To Do Details screen) - Portrait & Landscape View
- Version: 1.0.0
+ To-Do List App - Created To Do List App - Data Persistence
+ Version: 1.2.0
  */
 //
 //
+import CoreData
 import UIKit
-
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
